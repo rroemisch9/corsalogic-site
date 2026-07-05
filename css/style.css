@@ -479,22 +479,22 @@ form button { border: 0; cursor: pointer; font-family: var(--font); }
   form .row { grid-template-columns: 1fr; gap: 0; }
 }
 
-/* ---------- Footer ---------- */
+/* ----------  ---------- */
 
-.site-footer {
+.site- {
   border-top: 1px solid var(--hair);
   padding: 48px 0 56px;
 }
-.site-footer .inner {
+.site- .inner {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 32px;
   flex-wrap: wrap;
 }
-.site-footer img { height: 30px; }
-.site-footer nav { display: flex; gap: 26px; flex-wrap: wrap; }
-.site-footer nav a { text-decoration: none; font-size: 14px; color: var(--ink-soft); }
+.site- img { height: 64px; }
+.site- nav { display: flex; gap: 26px; flex-wrap: wrap; }
+.site- nav a { text-decoration: none; font-size: 14px; color: var(--ink-soft); }
 .site-footer nav a:hover { color: var(--red); }
 .site-footer .fine { font-size: 13px; color: var(--ink-soft); width: 100%; padding-top: 28px; }
 
