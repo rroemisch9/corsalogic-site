@@ -492,7 +492,7 @@ form button { border: 0; cursor: pointer; font-family: var(--font); }
   gap: 32px;
   flex-wrap: wrap;
 }
-.site-footer img { height: 32px; }
+.site-footer img { height: 88px; }
 .site-footer nav { display: flex; gap: 26px; flex-wrap: wrap; }
 .site-footer nav a { text-decoration: none; font-size: 14px; color: var(--ink-soft); }
 .site-footer nav a:hover { color: var(--red); }
