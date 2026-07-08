@@ -511,3 +511,10 @@ form button { border: 0; cursor: pointer; font-family: var(--font); }
   .reveal { opacity: 1; transform: none; transition: none; }
   .btn, .strip img, .gallery img { transition: none; }
 }
+
+/* ---------- Product screenshots (Race Control page) ---------- */
+.screenshot {
+  width: 100%;
+  box-shadow: 0 24px 70px rgba(17, 17, 17, 0.25);
+  border: 1px solid var(--hair-strong);
+}
