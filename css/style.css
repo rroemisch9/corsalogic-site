@@ -518,3 +518,27 @@ form button { border: 0; cursor: pointer; font-family: var(--font); }
   box-shadow: 0 24px 70px rgba(17, 17, 17, 0.25);
   border: 1px solid var(--hair-strong);
 }
+
+/* Feature blocks that carry a product screenshot: the shot is the point, so
+   it gets the lion's share of the row and is never cropped — the generic
+   .feature-media 4:3 crop cuts the edges off a dense timing UI. */
+.feature--shot { grid-template-columns: 5fr 3fr; gap: 56px; }
+.feature--shot .feature-media img { aspect-ratio: auto; object-fit: contain; }
+
+/* The lead timing screenshot breaks out of the text column for presence —
+   near-viewport width (80px margin also covers the scrollbar that 100vw
+   ignores), centered, capped so it never pixelates. */
+.screenshot--lead {
+  display: block;
+  width: min(1560px, calc(100vw - 80px));
+  max-width: none; /* the global img cap would pin it back inside the wrap */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 860px) {
+  /* keep the single-column stack on small screens (this rule sits after the
+     generic .feature breakpoint, so it must restate it) */
+  .feature--shot { grid-template-columns: 1fr; gap: 36px; }
+}
