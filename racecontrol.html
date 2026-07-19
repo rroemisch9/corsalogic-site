@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Race Control | CorsaLogic</title>
-<meta name="description" content="CorsaLogic Race Control: live timing, track maps, and AI strategy insights for IMSA competitors. Pit calls, fuel windows, pass-around eligibility, weather radar, and BoP — in one browser dashboard.">
+<meta name="description" content="CorsaLogic Race Control: live timing, track maps, and AI strategy insights for IMSA and INDYCAR competitors. Pit calls, live fuel models with driver-corrected tank readings, short-fill alerts, pass-around eligibility, weather radar, and BoP — in one browser dashboard.">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -44,7 +44,7 @@
 
   <section style="padding-top:0;">
     <div class="wrap reveal">
-      <img class="screenshot" src="assets/photos/racecontrol/timing.jpg" alt="Race Control live timing screen: full multi-class IMSA field with sector times, bests, gaps, and pit information" width="2400" height="1470" loading="eager">
+      <img class="screenshot" src="assets/photos/racecontrol/timing.jpg" alt="Race Control live timing screen: full multi-class IMSA field with sector times, bests, gaps, theoretical and projected laps, and pit information" width="2580" height="1580" loading="eager">
     </div>
   </section>
 
@@ -67,7 +67,8 @@
           <p class="prose">Race Control watches every timing line and calls out what matters, the moment it happens — with predictions built from a library of past races at the same circuit.</p>
           <ul>
             <li><strong>Pit stops, decoded.</strong> When a rival pits you get the lap, the time in the lane, and a rejoin prediction — before they're back up to speed.</li>
-            <li><strong>Fuel windows.</strong> Per-car tank models from the official BoP fuel capacities, with pit-window countdowns for the full field.</li>
+            <li><strong>Short fills, flagged.</strong> A stop far quicker than the field's usual gets called out the moment it happens — with the liters the fill model says actually went in.</li>
+            <li><strong>Windows on your lap numbers.</strong> Pit windows for the whole field read "opens lap 49 · stop lap 51", not arithmetic you do in your head.</li>
             <li><strong>Track intelligence.</strong> Pit-lane loss, stint lengths, caution frequency and timing — mined from real races at this venue, not rules of thumb.</li>
           </ul>
         </div>
@@ -83,8 +84,39 @@
           <p class="prose">Every car lives on a map of the real circuit, wrapped in a lap-progress ring. Under caution, the safety car is marked and the running order re-forms in front of you.</p>
           <ul>
             <li><strong>Pass-around answers.</strong> During full-course yellows, Race Control tells you plainly whether your car is a wave-by candidate — green when you are, red when you're not.</li>
-            <li><strong>Track order strip.</strong> The physical running order on the road, with lapped cars between the safety car and the leader raised out of the line.</li>
+            <li><strong>Live crossing order &amp; gap strip.</strong> The physical order on the road from the timing loops, plus a strip of on-track gaps around your car — who's ahead and behind on the tarmac, in seconds.</li>
             <li><strong>Battles ticker.</strong> Who's catching whom, at what rate, and how many laps until it matters.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="feature reveal">
+        <div class="feature-media">
+          <img class="screenshot" src="assets/photos/racecontrol/mycar.jpg" alt="MY CAR screen: liquid fuel gauge showing laps of fuel in the tank, fuel and strategy panel with projected stop lap, fuel trend chart, pace and sector comparison, threats and targets" loading="lazy">
+        </div>
+        <div>
+          <p class="label" style="margin-bottom:12px;">Fuel</p>
+          <h2>The tank, modeled — and corrected by your driver.</h2>
+          <p class="prose">A live fuel ledger for your car: a liquid tank gauge with laps of fuel inside it, a lap-by-lap trend chart, and the stop precomputed — down to the seconds of hose time to reach the finish.</p>
+          <ul>
+            <li><strong>Your numbers.</strong> Set the tank capacity and your measured liters-per-lap; every account keeps its own fuel settings, private to your team.</li>
+            <li><strong>Dash reports.</strong> Radio the fuel reading in, type it once, and the whole model re-anchors to reality — and it all survives a mid-race restart.</li>
+            <li><strong>The call, ready.</strong> Projected stop lap, fill-to-full and fill-to-finish in seconds at the real fill rate — honest about the physical tank, and about whether one stop is enough.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="feature flip reveal">
+        <div class="feature-media">
+          <img class="screenshot" src="assets/photos/racecontrol/split.jpg" alt="Split view: live timing on the left half of the screen with the track map docked on the right half" loading="lazy">
+        </div>
+        <div>
+          <p class="label" style="margin-bottom:12px;">Workspace</p>
+          <h2>Two screens on one monitor.</h2>
+          <p class="prose">Split the screen and dock any second panel on the right — timing beside the track map, or beside weather, your car, the pit wall. The pit-box workspace, on whatever screen you brought.</p>
+          <ul>
+            <li><strong>Any pairing.</strong> The right panel is the full product: every tab, live, with its own data connection.</li>
+            <li><strong>No duplication.</strong> The right half drops the clock and controls — pure content, and it follows whatever session you're watching.</li>
           </ul>
         </div>
       </div>
@@ -115,7 +147,19 @@
         </div>
         <div class="cell-third cell-red">
           <div class="wordmark">REPLAY</div>
-          <p>A library of complete past race weekends. Re-run any session at any speed — train new crew, review calls, or build next weekend's plan from the last one.</p>
+          <p>A library of complete past race weekends, grouped by championship. Re-run any session at any speed — train new crew, review calls, or build next weekend's plan from the last one.</p>
+        </div>
+        <div class="cell-third">
+          <h3>A library that heals itself</h3>
+          <p>Every byte of the live feed is captured raw. If a mid-race dropout ever tears a recording, Race Control rebuilds the complete session from the captures automatically — no one has to notice, because nothing goes missing.</p>
+        </div>
+        <div class="cell-third">
+          <h3>Stewards' corrections</h3>
+          <p>Official best-lap corrections, Retired and Excluded status, and corrected finish data from the stewards' channel flow straight into the running order.</p>
+        </div>
+        <div class="cell-third">
+          <h3>INDYCAR, too</h3>
+          <p>Race Control for the NTT INDYCAR SERIES runs as its own product at <a href="https://indycar.corsalogic.com">indycar.corsalogic.com</a> — separate accounts, separate data, the same cockpit.</p>
         </div>
       </div>
     </div>
