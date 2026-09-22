@@ -44,7 +44,7 @@
 
   <section style="padding-top:0;">
     <div class="wrap reveal">
-      <img class="screenshot screenshot--lead" src="assets/photos/racecontrol/timing.jpg" alt="Race Control live timing screen: full multi-class IMSA field with sector times, bests, gaps, theoretical and projected laps, and pit information" width="2580" height="1580" loading="eager">
+      <img class="screenshot screenshot--lead" src="assets/photos/racecontrol/timing.jpg" alt="Race Control live timing screen: full multi-class IMSA field with sector times, bests, gaps, theoretical and projected laps, and pit information" width="2560" height="1440" loading="eager">
     </div>
   </section>
 
@@ -55,75 +55,114 @@
   </section>
 
   <section class="rule-top">
-    <div class="wrap">
+    <div class="wrap reveal">
+      <p class="label" style="margin-bottom:12px;">Strategy</p>
+      <h2 class="shot-h">An AI race engineer on the feed.</h2>
+      <p class="prose">Race Control watches every timing line and calls out what matters, the moment it happens — with predictions built from a library of past races at the same circuit.</p>
+    </div>
+    <div class="wrap reveal">
+      <img class="screenshot screenshot--lead" src="assets/photos/racecontrol/strategy.jpg" alt="Strategy screen: live insight feed with pit callouts and fuel windows, caution risk, mined track intelligence, and a field-wide pit forecast with per-car fuel projections" loading="lazy">
+      <ul class="shot-points">
+        <li><strong>Pit stops, decoded.</strong> When a rival pits you get the lap, the time in the lane, and a rejoin prediction — before they're back up to speed.</li>
+        <li><strong>Short fills, flagged.</strong> A stop far quicker than the field's usual gets called out the moment it happens — with the liters the fill model says actually went in.</li>
+        <li><strong>Windows on your lap numbers.</strong> Pit windows for the whole field read "opens lap 49 · stop lap 51", not arithmetic you do in your head.</li>
+        <li><strong>Track intelligence.</strong> Pit-lane loss, stint lengths, caution frequency and timing — mined from real races at this venue, not rules of thumb.</li>
+      </ul>
+    </div>
+  </section>
 
-      <div class="feature feature--shot reveal">
-        <div class="feature-media">
-          <img class="screenshot" src="assets/photos/racecontrol/strategy.jpg" alt="Strategy screen: live insight feed with pit callouts and fuel windows, mined track intelligence, and per-car fuel and pit projections" loading="lazy">
-        </div>
-        <div>
-          <p class="label" style="margin-bottom:12px;">Strategy</p>
-          <h2>An AI race engineer on the feed.</h2>
-          <p class="prose">Race Control watches every timing line and calls out what matters, the moment it happens — with predictions built from a library of past races at the same circuit.</p>
-          <ul>
-            <li><strong>Pit stops, decoded.</strong> When a rival pits you get the lap, the time in the lane, and a rejoin prediction — before they're back up to speed.</li>
-            <li><strong>Short fills, flagged.</strong> A stop far quicker than the field's usual gets called out the moment it happens — with the liters the fill model says actually went in.</li>
-            <li><strong>Windows on your lap numbers.</strong> Pit windows for the whole field read "opens lap 49 · stop lap 51", not arithmetic you do in your head.</li>
-            <li><strong>Track intelligence.</strong> Pit-lane loss, stint lengths, caution frequency and timing — mined from real races at this venue, not rules of thumb.</li>
-          </ul>
-        </div>
-      </div>
+  <section class="rule-top">
+    <div class="wrap reveal">
+      <p class="label" style="margin-bottom:12px;">Track position</p>
+      <h2 class="shot-h">See the race, not just the column of numbers.</h2>
+      <p class="prose">Every car lives on a map of the real circuit, wrapped in a lap-progress ring. Under caution, the safety car is marked and the running order re-forms in front of you.</p>
+    </div>
+    <div class="wrap reveal">
+      <img class="screenshot screenshot--lead" src="assets/photos/racecontrol/trackmap.jpg" alt="Track map screen: circuit outline inside a lap-progress ring, every car positioned live, the rejoin marker showing where a pit stop comes back out, and the track-order strip" loading="lazy">
+      <ul class="shot-points">
+        <li><strong>Pass-around answers.</strong> During full-course yellows, Race Control tells you plainly whether your car is a wave-by candidate — green when you are, red when you're not.</li>
+        <li><strong>The rejoin marker.</strong> A pin on the circuit showing exactly where your car comes back out if it pits now, with the live cost of the stop in seconds — it moves as your tank empties.</li>
+        <li><strong>Live crossing order &amp; gap strip.</strong> The physical order on the road from the timing loops, plus a strip of on-track gaps around your car — who's ahead and behind on the tarmac, in seconds.</li>
+        <li><strong>Battles ticker.</strong> Who's catching whom, at what rate, and how many laps until it matters.</li>
+      </ul>
+    </div>
+  </section>
 
-      <div class="feature flip feature--shot reveal">
-        <div class="feature-media">
-          <img class="screenshot" src="assets/photos/racecontrol/trackmap.jpg" alt="Track map screen: circuit outline inside a lap-progress ring, safety car marked in yellow, and the track-order strip showing pass-around candidates" loading="lazy">
-        </div>
-        <div>
-          <p class="label" style="margin-bottom:12px;">Track position</p>
-          <h2>See the race, not just the column of numbers.</h2>
-          <p class="prose">Every car lives on a map of the real circuit, wrapped in a lap-progress ring. Under caution, the safety car is marked and the running order re-forms in front of you.</p>
-          <ul>
-            <li><strong>Pass-around answers.</strong> During full-course yellows, Race Control tells you plainly whether your car is a wave-by candidate — green when you are, red when you're not.</li>
-            <li><strong>Live crossing order &amp; gap strip.</strong> The physical order on the road from the timing loops, plus a strip of on-track gaps around your car — who's ahead and behind on the tarmac, in seconds.</li>
-            <li><strong>Battles ticker.</strong> Who's catching whom, at what rate, and how many laps until it matters.</li>
-          </ul>
-        </div>
-      </div>
+  <section class="rule-top">
+    <div class="wrap reveal">
+      <p class="label" style="margin-bottom:12px;">Fuel</p>
+      <h2 class="shot-h">The tank, modeled — and corrected by your driver.</h2>
+      <p class="prose">A live fuel ledger for your car: a liquid tank gauge with laps of fuel inside it, a lap-by-lap trend chart, and the stop precomputed — down to the seconds of hose time to reach the finish.</p>
+    </div>
+    <div class="wrap reveal">
+      <img class="screenshot screenshot--lead" src="assets/photos/racecontrol/mycar.jpg" alt="MY CAR screen: liquid fuel gauge showing laps of fuel in the tank, fuel and strategy panel with projected stop lap, short-fill what-if with rejoin traffic, pace comparison, threats and targets" loading="lazy">
+      <ul class="shot-points">
+        <li><strong>Your numbers.</strong> Set the tank capacity and your measured liters-per-lap; every account keeps its own fuel settings, private to your team.</li>
+        <li><strong>Dash reports.</strong> Radio the fuel reading in, type it once, and the whole model re-anchors to reality — and it all survives a mid-race restart.</li>
+        <li><strong>The call, ready.</strong> Projected stop lap, fill-to-full and fill-to-finish in seconds at the real fill rate — honest about the physical tank, and about whether one stop is enough.</li>
+        <li><strong>Fuel at the flag.</strong> The litres left in the tank at the chequered if you run it to the end — or exactly how many short you are, agreeing with the stop the window is already calling.</li>
+        <li><strong>Short fills, answered before you commit.</strong> Type the litres and see the hose time, the total stop cost, the laps it buys — and which cars you'd come back out between on track.</li>
+        <li><strong>Commands that can't get lost.</strong> Every fuel entry is held until the server confirms it, retried across reconnects, and flagged on screen until it lands — a call made on bad WiFi never dies silently.</li>
+      </ul>
+    </div>
+  </section>
 
-      <div class="feature feature--shot reveal">
-        <div class="feature-media">
-          <img class="screenshot" src="assets/photos/racecontrol/mycar.jpg" alt="MY CAR screen: liquid fuel gauge showing laps of fuel in the tank, fuel and strategy panel with projected stop lap, fuel trend chart, pace and sector comparison, threats and targets" loading="lazy">
-        </div>
-        <div>
-          <p class="label" style="margin-bottom:12px;">Fuel</p>
-          <h2>The tank, modeled — and corrected by your driver.</h2>
-          <p class="prose">A live fuel ledger for your car: a liquid tank gauge with laps of fuel inside it, a lap-by-lap trend chart, and the stop precomputed — down to the seconds of hose time to reach the finish.</p>
-          <ul>
-            <li><strong>Your numbers.</strong> Set the tank capacity and your measured liters-per-lap; every account keeps its own fuel settings, private to your team.</li>
-            <li><strong>Dash reports.</strong> Radio the fuel reading in, type it once, and the whole model re-anchors to reality — and it all survives a mid-race restart.</li>
-            <li><strong>The call, ready.</strong> Projected stop lap, fill-to-full and fill-to-finish in seconds at the real fill rate — honest about the physical tank, and about whether one stop is enough.</li>
-            <li><strong>Fuel at the flag.</strong> The litres left in the tank at the chequered if you run it to the end — or exactly how many short you are, agreeing with the stop the window is already calling.</li>
-            <li><strong>Short fills, answered before you commit.</strong> Type the litres and see the hose time, the total stop cost, the laps it buys — and which cars you'd come back out between on track. The rejoin marker on the map moves with your tank: less to fill, further up the road.</li>
-          </ul>
-        </div>
-      </div>
+  <section class="rule-top">
+    <div class="wrap reveal">
+      <p class="label" style="margin-bottom:12px;">Weather</p>
+      <h2 class="shot-h">The rain call, on your own radar.</h2>
+      <p class="prose">Current conditions at the venue, hour-by-hour forecast, minutes-to-rain — and animated precipitation radar centered on the circuit, served entirely from our own infrastructure so paddock networks can't take it away.</p>
+    </div>
+    <div class="wrap reveal">
+      <img class="screenshot screenshot--lead" src="assets/photos/racecontrol/weather.jpg" alt="Weather screen: live conditions and temperature, 15-minute precipitation slots for the next three hours, 12-hour forecast table, and precipitation radar centered on the circuit" loading="lazy">
+      <ul class="shot-points">
+        <li><strong>Storm rings.</strong> 2, 4, 6 and 8-mile range rings around the circuit — the lightning-hold brackets race officials actually use, drawn on the map.</li>
+        <li><strong>Minutes to rain.</strong> The forecast reduced to the one line a pit wall acts on: when water arrives, in minutes, with 15-minute precipitation slots for the next three hours.</li>
+        <li><strong>Circuit-proof by design.</strong> Basemap and radar tiles are served from Race Control's own servers — no third-party map host a venue firewall can block.</li>
+        <li><strong>Honest when it can't see.</strong> If radar imagery is unavailable, the map says so in words — it never quietly shows you an empty sky.</li>
+      </ul>
+    </div>
+  </section>
 
-      <div class="feature flip feature--shot reveal">
-        <div class="feature-media">
-          <img class="screenshot" src="assets/photos/racecontrol/workspace.jpg" alt="Workspace: four live modules on one screen — the timing scoreboard, the track map with the rejoin marker, the MY CAR dashboard, and weather with radar" loading="lazy">
-        </div>
-        <div>
-          <p class="label" style="margin-bottom:12px;">Workspace</p>
-          <h2>Build your own pit stand.</h2>
-          <p class="prose">Every screen in Race Control is a module. Arrange up to eight of them on one display — timing beside the map beside your car beside the radar — exactly the way professional timing workbooks do it, in the browser.</p>
-          <ul>
-            <li><strong>Drag, resize, swap.</strong> Move a module by its title bar, resize by the corner, change what any cell shows. Each module is fully live with its own class filter — one panel on GS, the next on TCR.</li>
-            <li><strong>Layouts that follow you.</strong> Save named layouts to your account: the rig you build at the shop is on the pit-stand laptop when you sign in. Presets get a new team started in one click.</li>
-            <li><strong>One car, every panel.</strong> Set MY CAR once and every module follows it instantly. A second monitor is just another window with a different layout loaded.</li>
-          </ul>
-        </div>
-      </div>
+  <section class="rule-top">
+    <div class="wrap reveal">
+      <p class="label" style="margin-bottom:12px;">Workspace</p>
+      <h2 class="shot-h">Build your own pit stand.</h2>
+      <p class="prose">Every screen in Race Control is a module. Arrange up to eight of them on one display — timing beside the map beside your car beside the radar — exactly the way professional timing workbooks do it, in the browser. Three of the built-in layouts:</p>
+    </div>
+    <div class="wrap reveal">
+      <p class="shot-cap"><strong>Race engineer</strong> — timing, track map, MY CAR and radar on one screen</p>
+      <img class="screenshot screenshot--lead" src="assets/photos/racecontrol/workspace-engineer.jpg" alt="RACE ENGINEER workspace layout: live timing scoreboard, track map with rejoin marker, MY CAR fuel and pace dashboard, and weather radar arranged on one display" loading="lazy">
+    </div>
+    <div class="wrap reveal">
+      <p class="shot-cap"><strong>Strategy wall</strong> — the insight feed, field pit forecast, charts and MY CAR</p>
+      <img class="screenshot screenshot--lead" src="assets/photos/racecontrol/workspace-strategy.jpg" alt="STRATEGY WALL workspace layout: strategy insight feed with caution risk, field-wide pit forecast, lap charts, and the MY CAR dashboard on one display" loading="lazy">
+    </div>
+    <div class="wrap reveal">
+      <p class="shot-cap"><strong>Timing + weather</strong> — the full scoreboard with conditions and radar beside it</p>
+      <img class="screenshot screenshot--lead" src="assets/photos/racecontrol/workspace-timing.jpg" alt="TIMING + WEATHER workspace layout: full multi-class timing scoreboard beside live conditions, hourly forecast, and precipitation radar" loading="lazy">
+      <ul class="shot-points">
+        <li><strong>Drag, resize, swap.</strong> Move a module by its title bar, resize by the corner, change what any cell shows. Each module is fully live with its own class filter — one panel on GS, the next on TCR.</li>
+        <li><strong>Layouts that follow you.</strong> Save named layouts to your account: the rig you build at the shop is on the pit-stand laptop when you sign in. Presets get a new team started in one click.</li>
+        <li><strong>One car, every panel.</strong> Set MY CAR once and every module follows it instantly. A second monitor is just another window with a different layout loaded.</li>
+      </ul>
+    </div>
+  </section>
 
+  <section class="rule-top">
+    <div class="wrap reveal">
+      <p class="label" style="margin-bottom:12px;">Pit Dial — hardware</p>
+      <h2 class="shot-h">One number, readable from across the box.</h2>
+      <p class="prose">A round USB knob display for the pit stand, fed over the same cable that powers it. Rotate the knob and the whole screen becomes the flag, the session clock, the pit window, your fuel, your gap, the weather, or a stint timer.</p>
+    </div>
+    <div class="wrap reveal">
+      <img class="screenshot screenshot--lead" src="assets/photos/racecontrol/pitdial.jpg" alt="Pit Dial faces: the whole round screen as a waving green flag, the session clock inside a countdown arc, and fuel remaining in seven-segment digits inside a tank arc" loading="lazy">
+      <ul class="shot-points">
+        <li><strong>No WiFi, no configuration.</strong> The browser feeds it over the USB cable — plug it in, press DIAL on the timing page, done. It holds no credentials and joins no network.</li>
+        <li><strong>The screen is the flag.</strong> On a flag change the ring under the base flashes until the knob is pressed — peripheral vision, engineered.</li>
+        <li><strong>Pit-stop takeover.</strong> When your car crosses the pit line the dial becomes a stop timer, then shows the total and re-arms the stint clock as it leaves.</li>
+        <li><strong>Honestly STALE.</strong> If frames stop arriving it says so, and how long ago — a pit display that lies is worse than one that is obviously down.</li>
+      </ul>
     </div>
   </section>
 
@@ -137,8 +176,8 @@
           <p>Multi-class scoreboard with sectors, bests, gaps and stints — plus the analysis screens professional timing tools charge four figures for: sector comparison, lap analysis, pit stop matrix, gap chart, all-laps tables, and CSV export of everything.</p>
         </div>
         <div class="cell-narrow">
-          <h3>Weather &amp; live radar</h3>
-          <p>Current conditions, hour-by-hour forecast, minutes-to-rain, and animated precipitation radar with 2/4/6/8-mile storm rings around the circuit — the lightning-hold brackets, drawn on the map. Every map tile is served from our own infrastructure, so circuit networks can't take your radar away.</p>
+          <h3>A clock that thinks in laps</h3>
+          <p>Beside the time remaining, the laps remaining — computed from the leader's live pace, aware that a caution slows the answer down. It counts to "FINAL LAP" so nobody on the stand is doing division at the flag.</p>
         </div>
         <div class="cell-third">
           <h3>Balance of Performance</h3>
@@ -169,8 +208,8 @@
           <p>Paddock WiFi drops without warning, and most software lies about it. Race Control doesn't: a heartbeat in the header beats once per message actually delivered — it physically cannot look healthy over a dead link — and shows the measured round trip. Every command you press is held until the server confirms it, retried across reconnects, and flagged on screen until it lands. A fuel call made on bad WiFi is never silently lost.</p>
         </div>
         <div class="cell-narrow">
-          <h3>Pit Dial — hardware</h3>
-          <p>A round USB knob display for the pit stand, fed over the same cable that powers it. No WiFi, no configuration: it follows your car — flag, clock, pit window, fuel, gap, weather, stint timer — and goes honestly STALE rather than showing old numbers as fresh.</p>
+          <h3>The whole field's next stop</h3>
+          <p>A pit forecast for every car when each one is next due in: laps until the window, the earliest lap they can make it on fuel, stops left to the flag — and NONE, MAKES IT for the cars that don't have to come back.</p>
         </div>
         <div class="cell-third">
           <h3>Notes, stamped to the race</h3>
