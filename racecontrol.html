@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Race Control | CorsaLogic</title>
-<meta name="description" content="CorsaLogic Race Control: live timing, track maps, and AI strategy insights for IMSA and INDYCAR competitors. Pit calls, live fuel models with driver-corrected tank readings, short-fill alerts, pass-around eligibility, weather radar, and BoP — in one browser dashboard.">
+<meta name="description" content="CorsaLogic Race Control: live timing, track maps, and AI strategy insights for IMSA and INDYCAR competitors. Build-your-own workspace layouts, a USB pit-stand dial, live fuel models with short-fill what-ifs, storm rings on circuit-proof weather radar, drive-time compliance, and race notes stamped to the clock — in one browser dashboard.">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -102,21 +102,24 @@
             <li><strong>Your numbers.</strong> Set the tank capacity and your measured liters-per-lap; every account keeps its own fuel settings, private to your team.</li>
             <li><strong>Dash reports.</strong> Radio the fuel reading in, type it once, and the whole model re-anchors to reality — and it all survives a mid-race restart.</li>
             <li><strong>The call, ready.</strong> Projected stop lap, fill-to-full and fill-to-finish in seconds at the real fill rate — honest about the physical tank, and about whether one stop is enough.</li>
+            <li><strong>Fuel at the flag.</strong> The litres left in the tank at the chequered if you run it to the end — or exactly how many short you are, agreeing with the stop the window is already calling.</li>
+            <li><strong>Short fills, answered before you commit.</strong> Type the litres and see the hose time, the total stop cost, the laps it buys — and which cars you'd come back out between on track. The rejoin marker on the map moves with your tank: less to fill, further up the road.</li>
           </ul>
         </div>
       </div>
 
       <div class="feature flip feature--shot reveal">
         <div class="feature-media">
-          <img class="screenshot" src="assets/photos/racecontrol/split.jpg" alt="Split view: live timing on the left half of the screen with the track map docked on the right half" loading="lazy">
+          <img class="screenshot" src="assets/photos/racecontrol/workspace.jpg" alt="Workspace: four live modules on one screen — the timing scoreboard, the track map with the rejoin marker, the MY CAR dashboard, and weather with radar" loading="lazy">
         </div>
         <div>
           <p class="label" style="margin-bottom:12px;">Workspace</p>
-          <h2>Two screens on one monitor.</h2>
-          <p class="prose">Split the screen and dock any second panel on the right — timing beside the track map, or beside weather, your car, the pit wall. The pit-box workspace, on whatever screen you brought.</p>
+          <h2>Build your own pit stand.</h2>
+          <p class="prose">Every screen in Race Control is a module. Arrange up to eight of them on one display — timing beside the map beside your car beside the radar — exactly the way professional timing workbooks do it, in the browser.</p>
           <ul>
-            <li><strong>Any pairing.</strong> The right panel is the full product: every tab, live, with its own data connection.</li>
-            <li><strong>No duplication.</strong> The right half drops the clock and controls — pure content, and it follows whatever session you're watching.</li>
+            <li><strong>Drag, resize, swap.</strong> Move a module by its title bar, resize by the corner, change what any cell shows. Each module is fully live with its own class filter — one panel on GS, the next on TCR.</li>
+            <li><strong>Layouts that follow you.</strong> Save named layouts to your account: the rig you build at the shop is on the pit-stand laptop when you sign in. Presets get a new team started in one click.</li>
+            <li><strong>One car, every panel.</strong> Set MY CAR once and every module follows it instantly. A second monitor is just another window with a different layout loaded.</li>
           </ul>
         </div>
       </div>
@@ -135,7 +138,7 @@
         </div>
         <div class="cell-narrow">
           <h3>Weather &amp; live radar</h3>
-          <p>Current conditions, hour-by-hour forecast, minutes-to-rain, and animated precipitation radar centered on the circuit.</p>
+          <p>Current conditions, hour-by-hour forecast, minutes-to-rain, and animated precipitation radar with 2/4/6/8-mile storm rings around the circuit — the lightning-hold brackets, drawn on the map. Every map tile is served from our own infrastructure, so circuit networks can't take your radar away.</p>
         </div>
         <div class="cell-third">
           <h3>Balance of Performance</h3>
@@ -147,7 +150,7 @@
         </div>
         <div class="cell-third cell-red">
           <div class="wordmark">REPLAY</div>
-          <p>A library of complete past race weekends, grouped by championship. Re-run any session at any speed — train new crew, review calls, or build next weekend's plan from the last one.</p>
+          <p>A library of complete past race weekends, grouped by championship. Re-run any session at any speed, and scrub by flag: the seek bar is painted with the race's flag history, so a caution or a restart is a color you drag to. Notes written during the race jump the replay straight to their moment.</p>
         </div>
         <div class="cell-third">
           <h3>A library that heals itself</h3>
@@ -156,6 +159,26 @@
         <div class="cell-third">
           <h3>Stewards' corrections</h3>
           <p>Official best-lap corrections, Retired and Excluded status, and corrected finish data from the stewards' channel flow straight into the running order.</p>
+        </div>
+        <div class="cell-third">
+          <h3>Drive time, decided</h3>
+          <p>Each driver against the minimum, the legal swap window on your lap numbers — and once everyone has served their time, one word: COMPLIANT.</p>
+        </div>
+        <div class="cell-wide">
+          <h3>Engineered for circuit internet</h3>
+          <p>Paddock WiFi drops without warning, and most software lies about it. Race Control doesn't: a heartbeat in the header beats once per message actually delivered — it physically cannot look healthy over a dead link — and shows the measured round trip. Every command you press is held until the server confirms it, retried across reconnects, and flagged on screen until it lands. A fuel call made on bad WiFi is never silently lost.</p>
+        </div>
+        <div class="cell-narrow">
+          <h3>Pit Dial — hardware</h3>
+          <p>A round USB knob display for the pit stand, fed over the same cable that powers it. No WiFi, no configuration: it follows your car — flag, clock, pit window, fuel, gap, weather, stint timer — and goes honestly STALE rather than showing old numbers as fresh.</p>
+        </div>
+        <div class="cell-third">
+          <h3>Notes, stamped to the race</h3>
+          <p>Session notes and driver debriefs land stamped to the race clock — in a replay, the stamp is a link straight to the moment. Your season's record, attached to the races themselves.</p>
+        </div>
+        <div class="cell-third">
+          <h3>Tires &amp; component life</h3>
+          <p>Tire sets with laps accumulated per stint, and component lifing against limits in laps, hours or events — the bar goes amber at 80%, red at 95%. The garage travels with your account.</p>
         </div>
         <div class="cell-third">
           <h3>INDYCAR, too</h3>
@@ -171,7 +194,8 @@
       <div class="prose">
         <p><strong>Nothing to install.</strong> Race Control runs in the browser — pit stand, garage, or the couch back home — and reads the same live timing feed the series broadcasts trackside. If the internet at the circuit fails you, the cloud timing path keeps the data flowing.</p>
         <p><strong>Per-seat accounts.</strong> Each team seat gets its own login. Access is activated on payment, and everything your crew sees stays inside your account.</p>
-        <p><strong>Built by a race engineer.</strong> Race Control is developed and run by CorsaLogic and used on our own pit stand. When something matters to the call, it matters to the product.</p>
+        <p><strong>The manual is in the app.</strong> Press <strong>?</strong> and the help opens at the screen you're on — a 60-second tour for a new crew member, plain-language answers for everything else. Every screen ships documented; the build fails if one doesn't.</p>
+        <p><strong>Built by a race engineer.</strong> Race Control is developed and run by CorsaLogic and used on our own pit stand — including on circuit WiFi bad enough to shape the engineering. When something matters to the call, it matters to the product.</p>
       </div>
     </div>
   </section>
