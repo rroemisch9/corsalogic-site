@@ -34,9 +34,9 @@
     <div class="wrap hero-grid">
       <div class="hero-copy reveal">
         <h1 class="display">Race engineering, measured in lap time.</h1>
-        <p class="lede">Setup, strategy, and data for teams and drivers who want engineering on their side of the pit wall.</p>
+        <p class="lede">One engineer, one plan, from load-in to load-out. Setup direction, tire programs, live race strategy, and driver debriefs for teams and drivers.</p>
         <div class="hero-cta">
-          <a class="btn" href="contact.html">Contact CorsaLogic</a>
+          <a class="btn" href="contact.html">Discuss your race weekend</a>
           <a class="btn btn--ghost" href="services.html">See the services</a>
         </div>
       </div>
@@ -46,48 +46,13 @@
     </div>
   </section>
 
-  <section class="statement rule-top">
-    <div class="wrap reveal">
-      <p>Focused on motorsport. Dedicated to <em>proven performance.</em> Nothing complicated.</p>
-    </div>
-  </section>
-
-  <section class="rule-top">
-    <div class="wrap">
-      <p class="label" style="margin-bottom:16px;">Services</p>
-      <h2 class="display reveal" style="margin-bottom:48px; max-width:16em;">Everything a race weekend asks of the engineering side.</h2>
-      <div class="bento reveal">
-        <div class="cell-wide">
-          <h3>Race engineering</h3>
-          <p>Setup direction, damper and aero decisions, tire programs, and a clear debrief loop with the driver. One engineer, one plan, from load-in to load-out.</p>
-        </div>
-        <div class="cell-narrow">
-          <h3>Strategy</h3>
-          <p>Fuel windows, stint planning, and pit calls built before the race, then managed live from the stand.</p>
-        </div>
-        <figure class="cell-third cell-photo">
-          <img src="assets/photos/med/img_2693.jpg" alt="Timing stand with live timing monitors and telemetry screens" loading="lazy">
-        </figure>
-        <div class="cell-third">
-          <h3>Pre &amp; post-race reports</h3>
-          <p>A written brief before the event and a full debrief after it. What happened, why, and what changes next time.</p>
-          <p style="margin-top:16px;"><a class="textlink" href="reports.html">How the reports work</a></p>
-        </div>
-        <div class="cell-third cell-red">
-          <div class="wordmark">LOGI<b>CAL</b></div>
-          <p>The CorsaLogic line of car management software. Build sheets, setup history, and component life in one place.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="rule-top">
     <div class="wrap">
       <div class="strip-head reveal">
         <h2 class="display">Cars we have run.</h2>
-        <a class="textlink" href="work.html">See all of them</a>
+        <a class="textlink" href="work.html">View cars we have run</a>
       </div>
-      <div class="strip reveal">
+      <div class="strip reveal" id="cars-strip">
         <a href="work.html"><img src="assets/photos/med/nsx76-track.jpg" alt="Acura NSX GT3 Evo at speed on track" loading="lazy"></a>
         <a href="work.html"><img src="assets/photos/med/cayman-train.jpg" alt="Porsche Cayman leading a train of cars through a chicane" loading="lazy"></a>
         <a href="work.html"><img src="assets/photos/med/img_2006.jpg" alt="Acura NSX GT3 Evo parked behind the pit wall" loading="lazy"></a>
@@ -96,19 +61,67 @@
         <a href="work.html"><img src="assets/photos/med/img_3898.jpg" alt="Blue TCR car in pit lane" loading="lazy"></a>
         <a href="work.html"><img src="assets/photos/med/img_9421.jpg" alt="Blue GT3 car on the grid with the crew making final checks" loading="lazy"></a>
       </div>
+      <div class="strip-controls" hidden>
+        <button type="button" class="strip-btn" data-dir="-1" aria-controls="cars-strip"><span aria-hidden="true">&larr;</span> Previous car</button>
+        <button type="button" class="strip-btn" data-dir="1" aria-controls="cars-strip">Next car <span aria-hidden="true">&rarr;</span></button>
+      </div>
     </div>
   </section>
 
   <section class="statement rule-top">
     <div class="wrap reveal">
-      <p>New in <em>Race Control</em> &mdash; championship points as they run, build-your-own workspace layouts, a USB pit-stand dial, and storm rings on circuit-proof radar. <em><a class="textlink" href="racecontrol.html" style="font-size:inherit; font-weight:inherit; color:inherit; border-color:currentColor;">See the product</a></em></p>
+      <p>Setup direction, live race strategy, and written reports before and after the event.</p>
+    </div>
+  </section>
+
+  <section class="rule-top">
+    <div class="wrap">
+      <p class="label" style="margin-bottom:16px;">Services</p>
+      <h2 class="display reveal" style="margin-bottom:48px; max-width:16em;">Engineering support for your race weekend</h2>
+      <div class="bento bento--services reveal">
+        <div class="cell-wide">
+          <h3>Race engineering</h3>
+          <p>Setup direction, damper and aero decisions, tire programs, and a clear debrief loop with the driver. One engineer, one plan, from load-in to load-out.</p>
+        </div>
+        <div class="cell-narrow">
+          <h3>Strategy</h3>
+          <p>Fuel windows, stint planning, and pit calls built before the race, then managed live from the stand.</p>
+        </div>
+        <figure class="cell-wide cell-photo">
+          <img src="assets/photos/med/img_2693.jpg" alt="Timing stand with live timing monitors and telemetry screens" loading="lazy">
+        </figure>
+        <div class="cell-narrow">
+          <h3>Pre &amp; post-race reports</h3>
+          <p>Before the event: a written brief.</p>
+          <p style="margin-top:8px;">After the event: a full debrief covering what happened, why, and what changes next time.</p>
+          <p style="margin-top:16px;"><a class="textlink" href="reports.html">How the reports work</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rule-top">
+    <div class="wrap">
+      <h2 class="display reveal" style="margin-bottom:48px;">Motorsport software</h2>
+      <div class="products reveal">
+        <article class="product">
+          <h3 class="wordmark">LOGI<b>CAL</b></h3>
+          <p>The CorsaLogic line of car management software. Build sheets, setup history, and component life in one place.</p>
+          <p class="product-link"><a class="textlink" href="contact.html">Ask about LOGICAL</a></p>
+        </article>
+        <article class="product">
+          <h3 class="wordmark">Race Control</h3>
+          <p>Race Control brings together live championship points, custom workspace layouts, a USB pit-stand dial, and radar with storm rings.</p>
+          <p class="product-link"><a class="textlink" href="racecontrol.html">Explore Race Control</a></p>
+        </article>
+      </div>
     </div>
   </section>
 
   <section class="cta-band">
     <div class="wrap inner">
       <h2 class="display reveal">Bring engineering to your next race weekend.</h2>
-      <a class="btn reveal" href="contact.html">Contact CorsaLogic</a>
+      <a class="btn reveal" href="contact.html">Discuss your race weekend</a>
     </div>
   </section>
 
